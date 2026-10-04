@@ -47,12 +47,12 @@ Chi tiết đầy đủ từng bước, bao gồm các lỗi kỹ thuật gặp 
 
 ## Kết quả chính
 
-| Hạng mục | Kết quả |
-|---|---|
-| Lỗ hổng xác nhận tồn tại | Có — kết nối callback được kích hoạt thành công |
-| Phương thức khai thác | JNDI Lookup qua tham số HTTP (`foo=${jndi:ldap://...}`) |
-| Bằng chứng | Log ứng dụng, Python listener, Wireshark — đối chiếu khớp qua port nguồn `49283` |
-| Khuyến nghị khắc phục | Vá Log4j ≥ 2.17.1; hoặc `LOG4J_FORMAT_MSG_NO_LOOKUPS=true`; WAF rule (compensating, có thể bị né) |
+| Hạng mục                 | Kết quả                                                                          |
+| ------------------------ | -------------------------------------------------------------------------------- |
+| Lỗ hổng xác nhận tồn tại | Có — kết nối callback được kích hoạt thành công                                  |
+| Phương thức khai thác    | JNDI Lookup qua tham số HTTP (`foo=${jndi:ldap://...}`)                          |
+| Bằng chứng               | Log ứng dụng, Python listener, Wireshark — đối chiếu khớp qua port nguồn `49283` |
+| Khuyến nghị khắc phục    | Vá Log4j ≥ 2.17.1; hoặc `LOG4J_FORMAT_MSG_NO_LOOKUPS=true`                       |
 
 ## Cấu trúc repo
 
